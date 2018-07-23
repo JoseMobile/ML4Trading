@@ -22,7 +22,6 @@ def optimize_portfolio(sd=dt.datetime(2008,1,1), ed=dt.datetime(2009,1,1), \
     #this function returns the standard deviation (Volatility) of the daily returns given the allocation of the portfolio
     # and the data of the assets in the portfolio
     
-    
         #get daily portfolio values
         alloc_val = (port_data/port_data.iloc[0])*alloc    
         port_val = alloc_val.sum(1)
